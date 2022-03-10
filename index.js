@@ -115,3 +115,28 @@ switch(mes)/*10*/{
 no switch é importante usar o break depois das acões, porque mesmo quando a condição estiver certa, sem o break ele vai executar todo o código abaixo até esgotar.
 */
 
+// funções 
+
+// sintaxe de uma função
+function hello() /*1*/{
+    // 1.1
+    console.log('hello');
+}
+hello() // 2
+
+function saida(texto)/*3*/{
+    // 1.2
+    console.log(texto); //4
+}
+saida('Olá' + ', tudo bem?'); // 5
+
+function soma(num1, num2)/*6*/{
+    return num1 + num2;
+}
+console.log(soma(1,5)) // 1.3
+let resultado = soma(1,7) //7
+console.log(resultado) // 1.4
+
+/*
+
+*/
