@@ -138,5 +138,11 @@ let resultado = soma(1,7) //7
 console.log(resultado) // 1.4
 
 /*
-
+{1} funcão hello sem nenhum parâmetro, mas com a ação de executar o console 1.1
+{2} chamando a função hello
+{3} função saida com o parametro texto, vai imprimir o console 1.2
+{4} o (texto) do console 1.2, é o parâmetro que vou usar quando eu chamar a função
+{5} chamo a função saida com um parâmetro, e uso o + para concatenar um segundo parâmetro, esses são os parâmetros do console 1.2
+{6} a função soma tem dois parâmetros, o return vai somar ambos os parâmetros e imprimir no console 1.3
+{7} na variavel resultado eu chamo a função soma e defino os parâmetros, para imprimir no console 1.4
 */
