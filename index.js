@@ -146,3 +146,46 @@ console.log(resultado) // 1.4
 {6} a função soma tem dois parâmetros, o return vai somar ambos os parâmetros e imprimir no console 1.3
 {7} na variavel resultado eu chamo a função soma e defino os parâmetros, para imprimir no console 1.4
 */
+
+// Programação orientada a objetos em Javascript
+let obj = {}; // 1
+obj.fabricante = 'chevrolet'; // 2
+obj.modelo = 'impala'; // 2
+obj.ano = '1967'; // 2
+console.log(`O carro é um ${obj.fabricante} ${obj.modelo} de ${obj.ano}`) //1.1
+
+// também é possível criar um objeto completo deste modo:
+dados /*3*/ = {
+    nome: /*4*/{
+        primeiro: 'Luiz',
+        segundo: 'Hakan'
+    },
+    endereço: /*5*/ {
+        estado: 'Pernambuco',
+        cidade: 'Recife'
+    }
+};
+
+console.log(`${dados.nome.primeiro} ${dados.nome.segundo}, mora em ${dados.endereço.cidade}, ${dados.endereço.estado}`) //1.1
+
+// em programação orientada a objetos, um objeto é uma intância de uma classe. uma classe define as características do objeto.
+// exemplo:
+class copaDoBrasil/*6*/{
+    constructor/*7*/(campeão, ano){
+        this.campeão = campeão;
+        this.ano = ano;
+    }
+}
+let copadoBrasil = new copaDoBrasil ('Sport', '2008') //8
+console.log(`${copadoBrasil.campeão} campeão da Copa do Brasil de ${copadoBrasil.ano}`) //1.2
+
+/*
+{1} eu crio o objeto e guardo numa variável chamada obj
+{2} eu atribuo valores ao meu objeto
+{3} aqui eu crio meu objeto 
+{4} atribuo o valor nome e crio outro objeto para adicionar mais dois valores
+{5} atribuo o valor endereço e crio outro objeto para adicionar mais dois valores
+{6} crio uma classe chamada copaDoBrasil
+{7} esse constructor é usado para criar um objeto apartir de uma classe (o this se refere ao objeto de modo global, ou seja, dentro e fora da classe)
+{8} crio a variável e uso o método new para atribuir valaores a minha classe copaDoBrasil 
+*/
