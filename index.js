@@ -170,14 +170,16 @@ console.log(`${dados.nome.primeiro} ${dados.nome.segundo}, mora em ${dados.ender
 
 // em programação orientada a objetos, um objeto é uma intância de uma classe. uma classe define as características do objeto.
 // exemplo:
-class copaDoBrasil/*6*/{
-    constructor/*7*/(campeão, ano){
+class copaDoBrasil {
+    constructor(campeão, ano){
         this.campeão = campeão;
         this.ano = ano;
     }
 }
-let copadoBrasil = new copaDoBrasil ('Sport', '2008') //8
-console.log(`${copadoBrasil.campeão} campeão da Copa do Brasil de ${copadoBrasil.ano}`) //1.2
+
+let CopaDoBrasil = new copaDoBrasil('Sport', 2008)
+console.log(`${CopaDoBrasil.campeão} campeão da Copa do Brasil em ${CopaDoBrasil.ano}`)
+
 
 /*
 {1} eu crio o objeto e guardo numa variável chamada obj
@@ -187,5 +189,39 @@ console.log(`${copadoBrasil.campeão} campeão da Copa do Brasil de ${copadoBras
 {5} atribuo o valor endereço e crio outro objeto para adicionar mais dois valores
 {6} crio uma classe chamada copaDoBrasil
 {7} esse constructor é usado para criar um objeto apartir de uma classe (o this se refere ao objeto de modo global, ou seja, dentro e fora da classe)
-{8} crio a variável e uso o método new para atribuir valaores a minha classe copaDoBrasil 
+{8} crio a variável e uso o método new para atribuir valores a minha classe copaDoBrasil 
+*/
+
+// var, let e const
+var anjo = 'miguel' //1
+var anjo = 'gabriel' //2
+console.log(anjo) //1.1
+
+let marca = 'samsung' //3
+// let marca = 'lenovo' // 4
+console.log(marca) // 1.2
+
+const pi = 3.141593;
+// pi = 3.14; // 5
+
+const frameworkJavaScript = {
+    nome: 'React'
+};
+frameworkJavaScript.nome = 'Angular'; // 6
+console.log(frameworkJavaScript.nome)
+// porém...
+// const frameworkJavaScript = {
+//     nome: 'Angular'
+// }; // 7
+
+/*
+{1} crio a 'var' anjo e atribuo um valor
+{2} reaproveito a 'var' anjo e atribuo um novo valor
+{3} crio a 'let' marca e atribuo um valor
+{4} erro de sintaxe: variável 'marca' já foi declarada
+{5} erro de digitação não detectado: atribuição para variável constante
+{6} aqui eu atribuo um valor ao objeto 'frameworkJavaScript'
+{7} erro de sintaxe: variável 'frameworkJavaScript' já foi declarada
+
+OBS: Somente a 'var' me permite atualizar o seu valor usando outra linha de código, as 'let' e 'const' não
 */
