@@ -278,3 +278,21 @@ console.log(`${tsnum1} + ${tsnum2} = ${tssoma}`) // 3.2
 ________________________________________________________________________________________
 Existem 3 formas de de usar string, aspas simples (''), aspas duplas ("") e crase (``(shift + acento agudo)), com crase é a maneira mais fácil e recomendada de usar string, tendo em vista que é possível colocar os valores dentro de uma única string. exemplo do console 3 e 3.1 
 */
+
+// funções de seta (arrow function)
+/*
+Existem 2 maneiras populares de criar funções, usando o function (sintaxe de uma função na linha 120) e usando o => (arrow function)
+*/
+
+let potenciacao = r => /*1*/{
+    let total = r ** r; // 2
+    return total; // 3
+};
+console.log(potenciacao(3)) // 4
+
+/*
+{1} eu guardo a função dentro da variável
+{2} uso a variável total para guardar o resultado da operação de potenciação
+{3} o return, vai enviar o valor da potenciação pra minha variável
+{4} importante ressaltar que o r que está antes da =>, é somente para eu definir um novo valor quando eu for chamar a função fora da variável
+*/
