@@ -251,3 +251,12 @@ console.log(RamboFilme2())
 {6} ele vai me retornar erro, porque esta função não foi declarada.
 {6} OBS: A variável ela foi sim declarada, mas ela só pode ser lida dentro da função, já que o escopo dela é o escopo local 
 */
+
+// var, let e const 2.0
+/*
+let permite que você declare variáveis limitando seu escopo no bloco, instrução, ou em uma expressão na qual ela é usada;
+é diferente de var, que define uma variável globalmente ou no escopo inteiro de uma função, independentemente do escopo de bloco;
+a declaração const cria uma referência somente leitura a um valor. isso não significa que esse valor é imutável, apenas que o identificador da variável constante não pode ser alterado.
+se o conteúdo do identificador for um objeto, isso significa que o conteúdo do objeto (parâmetros, valores, etc) podem ser alterados.
+*/
+
