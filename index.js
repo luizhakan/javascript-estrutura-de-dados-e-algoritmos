@@ -260,3 +260,21 @@ a declaração const cria uma referência somente leitura a um valor. isso não 
 se o conteúdo do identificador for um objeto, isso significa que o conteúdo do objeto (parâmetros, valores, etc) podem ser alterados.
 */
 
+// template string
+// uma coisa que eu deveria ter feito nas primeiras linhas, mas não fiz, é o template string
+let nome1 = `Luiz` // 1
+let sobrenome1 = `Hakan` // 2
+console.log(`Nome : ${nome1}\nSobrenome : ${sobrenome1}`) // 3
+
+let tsnum1 = 3;
+let tsnum2 = 7;
+let tssoma = tsnum1 + tsnum2; // 4
+console.log(`${tsnum1} + ${tsnum2} = ${tssoma}`) // 3.2
+/*
+{1} declaro a variável nome1
+{2} declaro a variável nome2
+{3} faço o uso do template string
+{4} guardo na variável tssoma o valor da soma entre tsnum1 + tsnum2
+________________________________________________________________________________________
+Existem 3 formas de de usar string, aspas simples (''), aspas duplas ("") e crase (``(shift + acento agudo)), com crase é a maneira mais fácil e recomendada de usar string, tendo em vista que é possível colocar os valores dentro de uma única string. exemplo do console 3 e 3.1 
+*/
