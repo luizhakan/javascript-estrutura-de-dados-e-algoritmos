@@ -225,3 +225,29 @@ console.log(frameworkJavaScript.nome)
 
 OBS: Somente a 'var' me permite atualizar o seu valor usando outra linha de código, as 'let' e 'const' não
 */
+
+// escopo de variáveis com let e const
+
+let filme = 'Rambo 1' // 1
+// var filme = 'Tropa de Elite 2' // erro, filme já foi declarada
+function RamboFilme2()/*2*/{
+    const filme = 'Rambo 2'; // 3
+    return filme; // 4
+}
+function RamboFilme3()/*2.2*/{
+    const rambo3 = 'Rambo 3'; // 5
+    return rambo3; // 4.4
+}
+
+console.log(RamboFilme2())
+// console.log(rambo3) // 6
+
+/*
+{1} eu declaro uma variável com escopo global (pode ser usada em qualquer lugar no código(depois dela ser declarada))
+{2} crio uma função para mostrar um exemplo de escopo
+{3} neste caso eu declaro a variável filme com o mesmo nome, só que ela é uma variável local (só vai funcionar dentro dessa função na qual ela se encontra)
+{4} o return vai me retornar o valor da variável local
+{5} declaro uma variável local dentro de uma função
+{6} ele vai me retornar erro, porque esta função não foi declarada.
+{6} OBS: A variável ela foi sim declarada, mas ela só pode ser lida dentro da função, já que o escopo dela é o escopo local 
+*/
