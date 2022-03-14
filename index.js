@@ -306,3 +306,23 @@ awbrasil() // 7
 {6} uma função sem parâmetro, feita apenas pra ser chamada e executar o console
 {7} chamo a função, para exibir na minha tela o console que contém nela
 */
+
+// valores padrão para parâmetros de funções
+
+function vpsoma(a,b,c)/*1*/{
+    if (a === undefined) a = 1; // 2
+    if (b === undefined) b = 2; // 2.1
+    if (c === undefined) c = 3; // 2.2
+    return a + b + c; // 3
+}
+console.log(`O resultado da função vpsoma é : ${vpsoma(2,2,2)}`) // 4
+
+/*
+[NOTA DO LIVRO] As funções JavaScript também têm um objeto embutido chamado arguments. Esse objeto é um array dos argumentos usados quando a função é chamada. Podemos acessar dinamicamente os argumentos e usá-los, mesmo que não saibamos o nome deles.
+
+{1} crio a função vpsoma e defino 3 parâmetros
+{2} se 'a' for igual a undefined, então a é igual a 1
+{2} se 'b' for igual a undefined, então 'b' é igual a 2
+{2} se 'c' for igual a undefined, então 'c' é igual a 3
+OBS : undefined quer dizer, nulo
+*/
