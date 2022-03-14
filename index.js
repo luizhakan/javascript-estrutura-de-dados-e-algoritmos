@@ -290,9 +290,19 @@ let potenciacao = r => /*1*/{
 };
 console.log(potenciacao(3)) // 4
 
+const awmul = r => r * r; //5
+console.log(`Arrow multiplicação : ${awmul(5)}`); // 5.1
+
+const awbrasil = () => console.log('Todo mundo tenta, mas só o Brasil é penta!'); // 6
+awbrasil() // 7
+
 /*
 {1} eu guardo a função dentro da variável
 {2} uso a variável total para guardar o resultado da operação de potenciação
 {3} o return, vai enviar o valor da potenciação pra minha variável
 {4} importante ressaltar que o r que está antes da =>, é somente para eu definir um novo valor quando eu for chamar a função fora da variável
+{5} eu crio uma arrow função com um único parâmetro, por isso não necessita de () nem de {}
+{5.1} aqui eu dou um console (não é necessário, eu só usei o console pra usar template string) e defino o valor de r
+{6} uma função sem parâmetro, feita apenas pra ser chamada e executar o console
+{7} chamo a função, para exibir na minha tela o console que contém nela
 */
