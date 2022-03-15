@@ -326,3 +326,24 @@ console.log(`O resultado da função vpsoma é : ${vpsoma(2,2,2)}`) // 4
 {2} se 'c' for igual a undefined, então 'c' é igual a 3
 OBS : undefined quer dizer, nulo
 */
+
+// spread operator (operador de espalhamento)
+let soParametros = [3,3,3] //1
+console.log(`Com a troca de parâmetros em spread operator, o valor é : ${vpsoma(...soParametros) /*2*/}`)
+
+/*
+{1} declaro a variável pra guardar os 3 valores pré-definidos nela
+{2} chamo a função, e uso o spread operator, assim colocando o array da minha variavel soParametros como os parâmetros da função
+*/
+
+// array destructuring (desestruturação de array)
+var [aD, bD] = ['y', 'z'] // 1
+// há também uma outra funcionalidade, chamada property shorthand (abreviação de propriedades)
+var [aD, bD] = ['y', 'z'] // 1.1
+let psobj = {aD, bD} // 2
+console.log(psobj) // 1.1
+
+/*
+{1} é o mesmo que fazer let aD = 'y' e let bD = 'z'
+{2} declaro a variável psobj e crio um objeto com as variáveis [aD, bD] que são um array, no console 1.1 ele vai me mostrar os valores como forma de objeto
+*/
