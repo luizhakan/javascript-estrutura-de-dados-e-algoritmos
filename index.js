@@ -1,7 +1,7 @@
 var num = 1; // {1}
 num = 3; // {2}
 var price = 1.5; // {3}
-var myName = 'Packt'; // {4}
+var myName = "Packt"; // {4}
 var trueValue = true; // {5}
 var nullVar = null; // {6}
 var und; // {7}
@@ -20,8 +20,8 @@ var und; // {7}
 let num1 = 2; // {1}
 let num2 = "2"; // {2}
 
-console.log(num1 == num2) // {3}
-console.log(num1 === num2) // {4}
+console.log(num1 == num2); // {3}
+console.log(num1 === num2); // {4}
 
 /*
 {1} num1 recebe 2 do tipo number
@@ -34,71 +34,73 @@ console.log(num1 === num2) // {4}
 
 let numif1 = 1; // 1
 
-if(numif1 == 1 /*2*/){
-    console.log(`O número é igual a 1. (método if)` /*3*/)
+if (numif1 == 1 /*2*/) {
+  console.log(`O número é igual a 1. (método if)` /*3*/);
 }
 
-let numif2 = 30; 
-if(numif2 == 1){ // 4
-    // 4.1
-    console.log(`O número correto é igual a ${numif2}, método if else`)
-} else /*5*/{ 
-    // 4.2
-    console.log(`O número é igual a ${numif2}. método (if else)`)
+let numif2 = 30;
+if (numif2 == 1) {
+  // 4
+  // 4.1
+  console.log(`O número correto é igual a ${numif2}, método if else`);
+} /*5*/ else {
+  // 4.2
+  console.log(`O número é igual a ${numif2}. método (if else)`);
 }
 
 let hora = 13;
-if(hora >= 5 && hora < 12/*6*/){
-    // 6.1
-    console.log('Bom dia')
-} else if (hora >= 12 && hora < 18)/*7*/{ /*6.2*/
-    console.log('Boa tarde')
-} else if (hora >= 18)/*8*/{
-    /*6.3*/
-    console.log('Boa noite')
+if (hora >= 5 && hora < 12 /*6*/) {
+  // 6.1
+  console.log("Bom dia");
+} else if (hora >= 12 && hora < 18) {
+  /*7*/ /*6.2*/
+  console.log("Boa tarde");
+} else if (hora >= 18) {
+  /*8*/ /*6.3*/
+  console.log("Boa noite");
 }
 
 let média = 7;
-console.log(média >= 7? 'APROVADO':'REPROVADO') // 9
+console.log(média >= 7 ? "APROVADO" : "REPROVADO"); // 9
 
 let mes = 1;
-switch(mes)/*10*/{
-    case 1:
-        console.log('Janeiro')
-        break
-    case 2:
-        console.log('Fevereiro')
-        break
-    case 3:
-        console.log('Março')
-        break
-    case 4:
-        console.log('Abril')
-        break
-    case 5:
-        console.log('Maio')
-        break
-    case 6:
-        console.log('Junho')
-        break
-    case 7:
-        console.log('Julho (melhor mês)')
-        break
-    case 8:
-        console.log('Agosto')
-        break
-    case 9:
-        console.log('Setembro')
-        break
-    case 10:
-        console.log('Outubro')
-        break
-    case 11:
-        console.log('Novembro')
-        break
-    case 12:
-        console.log('Dezembro')
-        break
+switch (mes /*10*/) {
+  case 1:
+    console.log("Janeiro");
+    break;
+  case 2:
+    console.log("Fevereiro");
+    break;
+  case 3:
+    console.log("Março");
+    break;
+  case 4:
+    console.log("Abril");
+    break;
+  case 5:
+    console.log("Maio");
+    break;
+  case 6:
+    console.log("Junho");
+    break;
+  case 7:
+    console.log("Julho (melhor mês)");
+    break;
+  case 8:
+    console.log("Agosto");
+    break;
+  case 9:
+    console.log("Setembro");
+    break;
+  case 10:
+    console.log("Outubro");
+    break;
+  case 11:
+    console.log("Novembro");
+    break;
+  case 12:
+    console.log("Dezembro");
+    break;
 }
 
 /*
@@ -115,27 +117,27 @@ switch(mes)/*10*/{
 no switch é importante usar o break depois das acões, porque mesmo quando a condição estiver certa, sem o break ele vai executar todo o código abaixo até esgotar.
 */
 
-// funções 
+// funções
 
 // sintaxe de uma função
-function hello() /*1*/{
-    // 1.1
-    console.log('hello');
+function hello() /*1*/ {
+  // 1.1
+  console.log("hello");
 }
-hello() // 2
+hello(); // 2
 
-function saida(texto)/*3*/{
-    // 1.2
-    console.log(texto); //4
+function saida(texto) /*3*/ {
+  // 1.2
+  console.log(texto); //4
 }
-saida('Olá' + ', tudo bem?'); // 5
+saida("Olá" + ", tudo bem?"); // 5
 
-function soma(num1, num2)/*6*/{
-    return num1 + num2;
+function soma(num1, num2) /*6*/ {
+  return num1 + num2;
 }
-console.log(soma(1,5)) // 1.3
-let resultado = soma(1,7) //7
-console.log(resultado) // 1.4
+console.log(soma(1, 5)); // 1.3
+let resultado = soma(1, 7); //7
+console.log(resultado); // 1.4
 
 /*
 {1} funcão hello sem nenhum parâmetro, mas com a ação de executar o console 1.1
@@ -149,37 +151,40 @@ console.log(resultado) // 1.4
 
 // Programação orientada a objetos em Javascript
 let obj = {}; // 1
-obj.fabricante = 'chevrolet'; // 2
-obj.modelo = 'impala'; // 2
-obj.ano = '1967'; // 2
-console.log(`O carro é um ${obj.fabricante} ${obj.modelo} de ${obj.ano}`) //1.1
+obj.fabricante = "chevrolet"; // 2
+obj.modelo = "impala"; // 2
+obj.ano = "1967"; // 2
+console.log(`O carro é um ${obj.fabricante} ${obj.modelo} de ${obj.ano}`); //1.1
 
 // também é possível criar um objeto completo deste modo:
 dados /*3*/ = {
-    nome: /*4*/{
-        primeiro: 'Luiz',
-        segundo: 'Hakan'
-    },
-    endereço: /*5*/ {
-        estado: 'Pernambuco',
-        cidade: 'Recife'
-    }
+  nome: /*4*/ {
+    primeiro: "Luiz",
+    segundo: "Hakan",
+  },
+  endereço: /*5*/ {
+    estado: "Pernambuco",
+    cidade: "Recife",
+  },
 };
 
-console.log(`${dados.nome.primeiro} ${dados.nome.segundo}, mora em ${dados.endereço.cidade}, ${dados.endereço.estado}`) //1.1
+console.log(
+  `${dados.nome.primeiro} ${dados.nome.segundo}, mora em ${dados.endereço.cidade}, ${dados.endereço.estado}`
+); //1.1
 
 // em programação orientada a objetos, um objeto é uma intância de uma classe. uma classe define as características do objeto.
 // exemplo:
 class copaDoBrasil {
-    constructor(campeão, ano){
-        this.campeão = campeão;
-        this.ano = ano;
-    }
+  constructor(campeão, ano) {
+    this.campeão = campeão;
+    this.ano = ano;
+  }
 }
 
-let CopaDoBrasil = new copaDoBrasil('Sport', 2008)
-console.log(`${CopaDoBrasil.campeão} campeão da Copa do Brasil em ${CopaDoBrasil.ano}`)
-
+let CopaDoBrasil = new copaDoBrasil("Sport", 2008);
+console.log(
+  `${CopaDoBrasil.campeão} campeão da Copa do Brasil em ${CopaDoBrasil.ano}`
+);
 
 /*
 {1} eu crio o objeto e guardo numa variável chamada obj
@@ -193,22 +198,22 @@ console.log(`${CopaDoBrasil.campeão} campeão da Copa do Brasil em ${CopaDoBras
 */
 
 // var, let e const
-var anjo = 'miguel' //1
-var anjo = 'gabriel' //2
-console.log(anjo) //1.1
+var anjo = "miguel"; //1
+var anjo = "gabriel"; //2
+console.log(anjo); //1.1
 
-let marca = 'samsung' //3
+let marca = "samsung"; //3
 // let marca = 'lenovo' // 4
-console.log(marca) // 1.2
+console.log(marca); // 1.2
 
 const pi = 3.141593;
 // pi = 3.14; // 5
 
 const frameworkJavaScript = {
-    nome: 'React'
+  nome: "React",
 };
-frameworkJavaScript.nome = 'Angular'; // 6
-console.log(frameworkJavaScript.nome)
+frameworkJavaScript.nome = "Angular"; // 6
+console.log(frameworkJavaScript.nome);
 // porém...
 // const frameworkJavaScript = {
 //     nome: 'Angular'
@@ -228,18 +233,18 @@ OBS: Somente a 'var' me permite atualizar o seu valor usando outra linha de cód
 
 // escopo de variáveis com let e const
 
-let filme = 'Rambo 1' // 1
+let filme = "Rambo 1"; // 1
 // var filme = 'Tropa de Elite 2' // erro, filme já foi declarada
-function RamboFilme2()/*2*/{
-    const filme = 'Rambo 2'; // 3
-    return filme; // 4
+function RamboFilme2() /*2*/ {
+  const filme = "Rambo 2"; // 3
+  return filme; // 4
 }
-function RamboFilme3()/*2.2*/{
-    const rambo3 = 'Rambo 3'; // 5
-    return rambo3; // 4.4
+function RamboFilme3() /*2.2*/ {
+  const rambo3 = "Rambo 3"; // 5
+  return rambo3; // 4.4
 }
 
-console.log(RamboFilme2())
+console.log(RamboFilme2());
 // console.log(rambo3) // 6
 
 /*
@@ -262,14 +267,14 @@ se o conteúdo do identificador for um objeto, isso significa que o conteúdo do
 
 // template string
 // uma coisa que eu deveria ter feito nas primeiras linhas, mas não fiz, é o template string
-let nome1 = `Luiz` // 1
-let sobrenome1 = `Hakan` // 2
-console.log(`Nome : ${nome1}\nSobrenome : ${sobrenome1}`) // 3
+let nome1 = `Luiz`; // 1
+let sobrenome1 = `Hakan`; // 2
+console.log(`Nome : ${nome1}\nSobrenome : ${sobrenome1}`); // 3
 
 let tsnum1 = 3;
 let tsnum2 = 7;
 let tssoma = tsnum1 + tsnum2; // 4
-console.log(`${tsnum1} + ${tsnum2} = ${tssoma}`) // 3.2
+console.log(`${tsnum1} + ${tsnum2} = ${tssoma}`); // 3.2
 /*
 {1} declaro a variável nome1
 {2} declaro a variável nome2
@@ -284,17 +289,18 @@ Existem 3 formas de de usar string, aspas simples (''), aspas duplas ("") e cras
 Existem 2 maneiras populares de criar funções, usando o function (sintaxe de uma função na linha 120) e usando o => (arrow function)
 */
 
-let potenciacao = r => /*1*/{
-    let total = r ** r; // 2
-    return total; // 3
+let potenciacao = (r) => /*1*/ {
+  let total = r ** r; // 2
+  return total; // 3
 };
-console.log(potenciacao(3)) // 4
+console.log(potenciacao(3)); // 4
 
-const awmul = r => r * r; //5
+const awmul = (r) => r * r; //5
 console.log(`Arrow multiplicação : ${awmul(5)}`); // 5.1
 
-const awbrasil = () => console.log('Todo mundo tenta, mas só o Brasil é penta!'); // 6
-awbrasil() // 7
+const awbrasil = () =>
+  console.log("Todo mundo tenta, mas só o Brasil é penta!"); // 6
+awbrasil(); // 7
 
 /*
 {1} eu guardo a função dentro da variável
@@ -309,13 +315,13 @@ awbrasil() // 7
 
 // valores padrão para parâmetros de funções
 
-function vpsoma(a,b,c)/*1*/{
-    if (a === undefined) a = 1; // 2
-    if (b === undefined) b = 2; // 2.1
-    if (c === undefined) c = 3; // 2.2
-    return a + b + c; // 3
+function vpsoma(a, b, c) /*1*/ {
+  if (a === undefined) a = 1; // 2
+  if (b === undefined) b = 2; // 2.1
+  if (c === undefined) c = 3; // 2.2
+  return a + b + c; // 3
 }
-console.log(`O resultado da função vpsoma é : ${vpsoma(2,2,2)}`) // 4
+console.log(`O resultado da função vpsoma é : ${vpsoma(2, 2, 2)}`); // 4
 
 /*
 [NOTA DO LIVRO] As funções JavaScript também têm um objeto embutido chamado arguments. Esse objeto é um array dos argumentos usados quando a função é chamada. Podemos acessar dinamicamente os argumentos e usá-los, mesmo que não saibamos o nome deles.
@@ -328,8 +334,12 @@ OBS : undefined quer dizer, nulo
 */
 
 // spread operator (operador de espalhamento)
-let soParametros = [3,3,3] //1
-console.log(`Com a troca de parâmetros em spread operator, o valor é : ${vpsoma(...soParametros) /*2*/}`)
+let soParametros = [3, 3, 3]; //1
+console.log(
+  `Com a troca de parâmetros em spread operator, o valor é : ${
+    vpsoma(...soParametros) /*2*/
+  }`
+);
 
 /*
 {1} declaro a variável pra guardar os 3 valores pré-definidos nela
@@ -337,13 +347,38 @@ console.log(`Com a troca de parâmetros em spread operator, o valor é : ${vpsom
 */
 
 // array destructuring (desestruturação de array)
-var [aD, bD] = ['y', 'z'] // 1
+var [aD, bD] = ["y", "z"]; // 1
 // há também uma outra funcionalidade, chamada property shorthand (abreviação de propriedades)
-var [aD, bD] = ['y', 'z'] // 1.1
-let psobj = {aD, bD} // 2
-console.log(psobj) // 1.1
+var [aD, bD] = ["y", "z"]; // 1.1
+let psobj = { aD, bD }; // 2
+console.log(psobj); // 1.1
 
 /*
 {1} é o mesmo que fazer let aD = 'y' e let bD = 'z'
 {2} declaro a variável psobj e crio um objeto com as variáveis [aD, bD] que são um array, no console 1.1 ele vai me mostrar os valores como forma de objeto
 */
+
+// também é possível pôr funções dentro de objetos, exemplo:
+const foOla = {
+  nome: "luiz",
+  printOla(nome) {
+    return console.log(`Ola, ${nome}`);
+  },
+};
+foOla.printOla(foOla.nome);
+
+// poo (programação orientada a objetos) com classes
+
+class pooLivro {
+    constructor(titulo, paginas, identificador){
+        this.titulo = titulo;
+        this.paginas = paginas;
+        this.identificador = identificador;
+    }
+    printIdentificador(){
+        console.log(this.identificador)
+    }
+}
+let pooLivro2 = new pooLivro ('Hakan, Luiz', 365, '365730')
+
+console.log(`Livro \nTítulo : ${pooLivro2.titulo} \nPáginas : ${pooLivro2.paginas} \nIdentificador : ${pooLivro2.identificador}`)
