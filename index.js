@@ -369,21 +369,28 @@ foOla.printOla(foOla.nome);
 
 // poo (programação orientada a objetos)
 
-class pooLivro {
-  constructor(titulo, paginas, identificador) {
+class pooLivro /*1*/{
+  constructor(titulo, paginas, identificador)/*2*/ {
     this.titulo = titulo;
     this.paginas = paginas;
     this.identificador = identificador;
   }
-  printIdentificador() {
+  printIdentificador()/*3*/ {
     console.log(this.identificador);
   }
 }
-let pooLivro2 = new pooLivro("Hakan, Luiz", 365, "365730");
+let pooLivro2 = new pooLivro("Hakan, Luiz", 365, "365730"); /*4*/
 
 console.log(
   `Livro \nTítulo : ${pooLivro2.titulo} \nPáginas : ${pooLivro2.paginas} \nIdentificador : ${pooLivro2.identificador}`
 );
+
+/*
+{1} crio minha classe pooLivro
+{2} uso o constructor para ele criar 3 objetos para mim
+{3} uma função caso queira mostrar o identificador (nem eu sei pq coloquei ela aí '-')
+{4} na variável pooLivro2 eu uso o new para atribuir valores a classe pooLivro
+*/
 
 // class extends (herança entre classes)
 
@@ -392,18 +399,27 @@ class hcLivro {
     this.titulo = titulo;
     this.paginas = paginas;
   }
-}
+}  // 1
 
-var novoLivro = new hcLivro('Luiz Hakan, JavaScript', 365)
+var novoLivro = new hcLivro('Luiz Hakan, JavaScript', 365)  // 2
 
 console.log(novoLivro)
 
-class hcLivroAutor extends hcLivro{
-  constructor(titulo, paginas, autor){
-    super(titulo, paginas);
-    this.autor = autor;
+class hcLivroAutor extends hcLivro{ // 3
+  constructor(titulo, paginas, autor) {
+    super(titulo, paginas); /*4*/
+    this.autor = autor; // 5
   }
 }
 
-var novoLivro = new hcLivroAutor('Luiz Hakan, JavaScript - Estrutura de Dados e Algoritmos', 730, 'Luiz Hakan')
+var novoLivro = new hcLivroAutor('Luiz Hakan, JavaScript - Estrutura de Dados e Algoritmos', 730, 'Luiz Hakan') // 6
 console.log(novoLivro)
+
+/*
+{1} crio minha classe hcLivro, usando um constructor com 2 parâmetros
+{2} crio a var(usei o var nesse exemplo, para declarar ele novamente no futuro) novoLivro e uso o new hcLivro para atribuir valor aos dois parâmetros de minha classe
+{3} crio a classe hcLivroAutor e uso o extends hcLivro para indicar que a minha nova classe, vai possuir heranças da classe hcLivro
+{4} uso o super() para acessar os parâmetros pai da classe pai de minha classe
+{5} aqui eu digo através do this.autor que o meu parâmetro autor tem um escopo global
+{6} reutilizo a variável novoLivro para adicionar e o new para atribuir novos valores a minha classe
+*/
