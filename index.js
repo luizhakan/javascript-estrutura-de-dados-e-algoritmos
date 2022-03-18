@@ -367,18 +367,43 @@ const foOla = {
 };
 foOla.printOla(foOla.nome);
 
-// poo (programação orientada a objetos) com classes
+// poo (programação orientada a objetos)
 
 class pooLivro {
-    constructor(titulo, paginas, identificador){
-        this.titulo = titulo;
-        this.paginas = paginas;
-        this.identificador = identificador;
-    }
-    printIdentificador(){
-        console.log(this.identificador)
-    }
+  constructor(titulo, paginas, identificador) {
+    this.titulo = titulo;
+    this.paginas = paginas;
+    this.identificador = identificador;
+  }
+  printIdentificador() {
+    console.log(this.identificador);
+  }
 }
-let pooLivro2 = new pooLivro ('Hakan, Luiz', 365, '365730')
+let pooLivro2 = new pooLivro("Hakan, Luiz", 365, "365730");
 
-console.log(`Livro \nTítulo : ${pooLivro2.titulo} \nPáginas : ${pooLivro2.paginas} \nIdentificador : ${pooLivro2.identificador}`)
+console.log(
+  `Livro \nTítulo : ${pooLivro2.titulo} \nPáginas : ${pooLivro2.paginas} \nIdentificador : ${pooLivro2.identificador}`
+);
+
+// class extends (herança entre classes)
+
+class hcLivro {
+  constructor(titulo, paginas) {
+    this.titulo = titulo;
+    this.paginas = paginas;
+  }
+}
+
+var novoLivro = new hcLivro('Luiz Hakan, JavaScript', 365)
+
+console.log(novoLivro)
+
+class hcLivroAutor extends hcLivro{
+  constructor(titulo, paginas, autor){
+    super(titulo, paginas);
+    this.autor = autor;
+  }
+}
+
+var novoLivro = new hcLivroAutor('Luiz Hakan, JavaScript - Estrutura de Dados e Algoritmos', 730, 'Luiz Hakan')
+console.log(novoLivro)
