@@ -369,13 +369,13 @@ foOla.printOla(foOla.nome);
 
 // poo (programação orientada a objetos)
 
-class pooLivro /*1*/{
-  constructor(titulo, paginas, identificador)/*2*/ {
+class pooLivro /*1*/ {
+  constructor(titulo, paginas, identificador) /*2*/ {
     this.titulo = titulo;
     this.paginas = paginas;
     this.identificador = identificador;
   }
-  printIdentificador()/*3*/ {
+  printIdentificador() /*3*/ {
     console.log(this.identificador);
   }
 }
@@ -399,21 +399,26 @@ class hcLivro {
     this.titulo = titulo;
     this.paginas = paginas;
   }
-}  // 1
+} // 1
 
-var novoLivro = new hcLivro('Luiz Hakan, JavaScript', 365)  // 2
+var novoLivro = new hcLivro("Luiz Hakan, JavaScript", 365); // 2
 
-console.log(novoLivro)
+console.log(novoLivro);
 
-class hcLivroAutor extends hcLivro{ // 3
+class hcLivroAutor extends hcLivro {
+  // 3
   constructor(titulo, paginas, autor) {
     super(titulo, paginas); /*4*/
     this.autor = autor; // 5
   }
 }
 
-var novoLivro = new hcLivroAutor('Luiz Hakan, JavaScript - Estrutura de Dados e Algoritmos', 730, 'Luiz Hakan') // 6
-console.log(novoLivro)
+var novoLivro = new hcLivroAutor(
+  "Luiz Hakan, JavaScript - Estrutura de Dados e Algoritmos",
+  730,
+  "Luiz Hakan"
+); // 6
+console.log(novoLivro);
 
 /*
 {1} crio minha classe hcLivro, usando um constructor com 2 parâmetros
@@ -422,4 +427,33 @@ console.log(novoLivro)
 {4} uso o super() para acessar os parâmetros pai da classe pai de minha classe
 {5} aqui eu digo através do this.autor que o meu parâmetro autor tem um escopo global
 {6} reutilizo a variável novoLivro para adicionar e o new para atribuir novos valores a minha classe
+*/
+
+// getters e setters
+
+class gsTimesPe {
+  constructor(time) {
+    return this._time; // 1
+  }
+  get nome() { // 2
+    return this._time;
+  }
+  set nome(valor) { // 3
+    this._time = valor;
+  }
+}
+
+let gsMelhorTime = new gsTimesPe('Sport Recife')
+// console.log(gsMelhorTime) 4 // gsTimesPe{}
+gsMelhorTime.time = 'Sport Recife' // 5
+gsMelhorTime._time = 'Sport Recife' // 6
+console.log(gsMelhorTime)
+
+/*
+{1} quando um atributo tem o _ (underline) no ínicio, a convenção diz que não é pra mexer nele
+{2} método usado para acessar uma propriedade
+{3} método especial usado para dar valor a uma propriedade
+{4} usei o método get para acessar o gsMelhorTime como se fosse um atributo simples
+{5} usei o método set para atribuir um novo valor ao gsMelhorTime
+{6} embora a convenção diga que um atributo com _ (underline) não é pra mexer, ele não é um atributo privado em si porquê no javascript ainda não tem essa funcionalidade, mas não é recomendado mexer em atributos privados
 */
