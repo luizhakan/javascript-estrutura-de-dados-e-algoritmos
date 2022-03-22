@@ -465,3 +465,7 @@ console.log(gsMelhorTime);
 A criação de módulos, envolve a criação de outros arquivos para importá-los, o método é muito útil para reutilização de componentes, evitando o excesso de código no seu arquivo principal, olhe a pasta módulos deste repositório para entender o conceito e aplicação de importação/exportação na prática!
 */
 
+// require e modules.export
+let imNome = require('./modulos/MostraNome')
+
+console.log(imNome('Luiz'))
