@@ -435,19 +435,21 @@ class gsTimesPe {
   constructor(time) {
     return this._time; // 1
   }
-  get nome() { // 2
+  get nome() {
+    // 2
     return this._time;
   }
-  set nome(valor) { // 3
+  set nome(valor) {
+    // 3
     this._time = valor;
   }
 }
 
-let gsMelhorTime = new gsTimesPe('Sport Recife')
+let gsMelhorTime = new gsTimesPe("Sport Recife");
 // console.log(gsMelhorTime) 4 // gsTimesPe{}
-gsMelhorTime.time = 'Sport Recife' // 5
-gsMelhorTime._time = 'Sport Recife' // 6
-console.log(gsMelhorTime)
+gsMelhorTime.time = "Sport Recife"; // 5
+gsMelhorTime._time = "Sport Recife"; // 6
+console.log(gsMelhorTime);
 
 /*
 {1} quando um atributo tem o _ (underline) no ínicio, a convenção diz que não é pra mexer nele
@@ -457,3 +459,9 @@ console.log(gsMelhorTime)
 {5} usei o método set para atribuir um novo valor ao gsMelhorTime
 {6} embora a convenção diga que um atributo com _ (underline) não é pra mexer, ele não é um atributo privado em si porquê no javascript ainda não tem essa funcionalidade, mas não é recomendado mexer em atributos privados
 */
+
+// MÓDULOS
+/*
+A criação de módulos, envolve a criação de outros arquivos para importá-los, o método é muito útil para reutilização de componentes, evitando o excesso de código no seu arquivo principal, olhe a pasta módulos deste repositório para entender o conceito e aplicação de importação/exportação na prática!
+*/
+
