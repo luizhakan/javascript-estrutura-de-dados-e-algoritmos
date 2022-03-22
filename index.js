@@ -466,6 +466,20 @@ A criação de módulos, envolve a criação de outros arquivos para importá-lo
 */
 
 // require e modules.export
-let imNome = require('./modulos/MostraNome')
+let imNome = require('./modulos/MostraNome')  // 1
 
-console.log(imNome('Luiz'))
+console.log(imNome('Luiz'))  // 2
+
+// function MostraNome(nome) // 3 {
+//   return `A função MostraNome funcionou, sr(a), ${nome}!`;
+// }
+
+// module.exports = MostraNome  // 4
+
+/*
+OBS: O CÓDIGO 3 E 4 ESTÃO EM UMA PASTA DIFERENTE, EM UM MÓDULO QUE EU IMPORTEI PARA ESTE ARQUIVO
+{1} na minha let imNome, eu uso o require para chamar o meu módulo MostraNome, passando o conteúdo do módulo para minha variável
+{2} aqui eu chamo a função MostraNome, que está guardada na minha variável imNome, e defino o parâmetro dela
+{3} crio minha função MostraNome e defino nome como parâmetro
+{4} quer dizer que eu quero que a função MostraNome seja exportada como um módulo, permitindo então que eu importe ela em qualquer arquivo .js e use o conteúdo dela
+*/
