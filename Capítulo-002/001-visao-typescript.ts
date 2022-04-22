@@ -1,0 +1,2 @@
+// TypeScript é uma linguagem de programação de código aberto desenvolvida pela microsoft. é um superconjunto sintático estrito de javascript e adiciona tipagem estática opcional à linguagem.
+// é uma linguagem fortemente tipada, torna o código mais seguro
