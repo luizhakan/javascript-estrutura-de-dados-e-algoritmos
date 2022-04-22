@@ -7,16 +7,15 @@ Eu decidi recomeçar este repositório para construir ele de uma maneira mais or
 - [x] Básico sobre o JavaScript
 - [x] Variáveis
 - [x] Escopo das variáveis
-- [] Operadores
-- [] Verdadeiro e falso
-- [] Funções dos operadores de igualdade (== e ===)
-- [] Estruturas de controle
-- [] Instruções condicionais
-- [] Laços
-- [] Funções
-- [] Programação orientada a objetos em Javascript
-- [] Depuração e ferramentas
-- [] Depuração com o VSCode
+- [x] Operadores
+- [x] Verdadeiro e falso
+- [x] Funções dos operadores de igualdade (== e ===)
+- [x] Estruturas de controle
+- [x] Instruções condicionais
+- [x] Laços
+- [x] Funções
+- [x] Programação orientada a objetos em Javascript
+- [x] Depuração e ferramentas
 
 # Capítulo 2
 - [] Visão geral sobre ECMAScript e TypeScript
