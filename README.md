@@ -18,10 +18,9 @@ Eu decidi recomeçar este repositório para construir ele de uma maneira mais or
 - [x] Depuração e ferramentas
 
 # Capítulo 2
-- [] Visão geral sobre ECMAScript e TypeScript
-- [] ECMAScript ou JavaScript?
-- [] Usando o Babel.js
-- [] let e const no lugar de var
+- [x] Visão geral sobre ECMAScript e TypeScript
+- [x] Usando o Babel.js
+- [x] let e const no lugar de var
 - [] Escopo de variáveis com let e const
 - [] Templates literais
 - [] Funções de seta
