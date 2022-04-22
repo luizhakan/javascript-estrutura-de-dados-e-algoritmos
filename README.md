@@ -2,11 +2,11 @@
 Eu decidi recomeçar este repositório para construir ele de uma maneira mais organizada, já que eu parei no capitulo 2 do livro para aprender o básico necessário de TypeScript para continuar lendo, eu agora irei retornar ao início do livro. E sim, mesmo eu já sabendo uma boa parte deste livro, eu irei ler novamente tanto para fixar o seu conteúdo vasto, como para aprender mais e passar do ponto em que eu parei anteriormente.
 
 # Capítulo 1
-- [] JavaScript – uma visão geral rápida
-- [] http-server do Node.js
-- [] Básico sobre o JavaScript
-- [] Variáveis
-- [] Escopo das variáveis
+- [x] JavaScript – uma visão geral rápida
+- [x] http-server do Node.js
+- [x] Básico sobre o JavaScript
+- [x] Variáveis
+- [x] Escopo das variáveis
 - [] Operadores
 - [] Verdadeiro e falso
 - [] Funções dos operadores de igualdade (== e ===)
