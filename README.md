@@ -21,12 +21,12 @@ Eu decidi recomeçar este repositório para construir ele de uma maneira mais or
 - [x] Visão geral sobre ECMAScript e TypeScript
 - [x] Usando o Babel.js
 - [x] let e const no lugar de var
-- [] Escopo de variáveis com let e const
-- [] Templates literais
-- [] Funções de seta
-- [] Valores default para parâmetros de funções
-- [] Declarando os operadores de espalhamento e rest
-- [] Propriedades melhoradas de objetos
+- [x] Escopo de variáveis com let e const
+- [x] Templates literais
+- [x] Funções de seta
+- [x] Valores default para parâmetros de funções
+- [x] Declarando os operadores de espalhamento e rest
+- [x] Propriedades melhoradas de objetos
 - [] Programação orientada a objetos com classes
 - [] Herança
 - [] Trabalhando com getters e setters
