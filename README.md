@@ -27,10 +27,10 @@ Eu decidi recomeçar este repositório para construir ele de uma maneira mais or
 - [x] Valores default para parâmetros de funções
 - [x] Declarando os operadores de espalhamento e rest
 - [x] Propriedades melhoradas de objetos
-- [] Programação orientada a objetos com classes
-- [] Herança
-- [] Trabalhando com getters e setters
-- [] Operador de exponencial
+- [x] Programação orientada a objetos com classes
+- [x] Herança
+- [x] Trabalhando com getters e setters
+- [x] Operador de exponencial
 - [] Módulos
 - [] Executando módulos ES2015 no navegador e com o Node.js
 - [] Usando importações nativas da ES2015 no Node.js
