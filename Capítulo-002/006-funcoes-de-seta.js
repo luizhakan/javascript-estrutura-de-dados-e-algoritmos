@@ -11,3 +11,6 @@ console.log(areaCirculo(2));
 // se a função tiver uma única instrução, podemos até tirar o return
 const multiplicando = (n1, n2) => n1 * n2;
 console.log(multiplicando(3, 3));
+
+// o código a seguir, foi adicionado para auxilio ao arquivo 014
+export { areaCirculo };
