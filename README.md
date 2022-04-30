@@ -31,14 +31,12 @@ Eu decidi recomeçar este repositório para construir ele de uma maneira mais or
 - [x] Herança
 - [x] Trabalhando com getters e setters
 - [x] Operador de exponencial
-- [] Módulos
-- [] Executando módulos ES2015 no navegador e com o Node.js
-- [] Usando importações nativas da ES2015 no Node.js
-- [] Executando módulos ES2015 no navegador
-- [] Introdução ao TypeScript
-- [] Inferência de tipo
-- [] Interfaces
-- [] Genéricos
+- [x] Módulos
+- [x] Executando módulos ES2015 no navegador
+- [x] Introdução ao TypeScript
+- [x] Inferência de tipo
+- [x] Interfaces
+- [x] Genéricos
 
 # Capítulo 3
 - [] Arrays
