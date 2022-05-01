@@ -39,9 +39,9 @@ Eu decidi recomeçar este repositório para construir ele de uma maneira mais or
 - [x] Genéricos
 
 # Capítulo 3
-- [] Arrays
-- [] Criando e inicializando arrays
-- [] Acessando elementos e fazendo uma iteração em um array
+- [x] Arrays
+- [x] Criando e inicializando arrays
+- [x] Acessando elementos e fazendo uma iteração em um array
 - [] Métodos arrays
 - [] Arrays bidimensionais e multidimensionais
 - [] Iterando pelos elementos de arrays bidimensionais
