@@ -1,11 +1,27 @@
 // o flat cria um novo array com todos elementos sub-array concatenados
 
-var arr1 = [1, 2, [3, 4]];
-console.log(arr1.flat()); // [ 1, 2, 3, 4 ] ele concatenou o meu sub-array
+// aqui são 3 array separados
 
-var arr2 = [1, 2, 3, [4, 5, [6, 7]]];
-console.log(arr2.flat()); // [ 1, 2, 3, 4, 5, [ 6, 7 ] ] ele concatenou o sub array do meu sub array
+const luiz = [{ nome: "Luiz", level: 100 }];
+const yasmin = [{ nome: "Yasmin", level: 86 }];
+const alex = [{ nome: "Alex", level: 91 }];
+// digamos que eu quero concatenar os meus 3 arrays em um só...
+// eu posso usar o push
+// este array luizPu foi criado somenta para mostrar o push funcionando
+const luizPu = [{ nome: "Luiz", level: 100 }];
+luizPu.push(...yasmin, ...alex);
+console.log('\npush');
+console.log(luizPu)
 
-var arr3 = [1,2,3, , , 5];
-console.log(arr3.flat()); // [ 1, 2, 3, 5 ] ele também remove espaços vazios no array
-// reduce e concat são alternativas
+// eu também posso criar um novo array e adicionar usando o spread
+const spread = [...luiz, ...yasmin, ...alex];
+console.log('\nspread');
+console.log(spread)
+
+// o flat me torna possível concatenar os arrays de forma interessante, sem usar o spread
+console.log('\nflat');
+console.log([luiz, yasmin, alex].flat());
+
+// o flat também remove espaços vazios no array
+console.log('\nremovendo espaços vazios');
+console.log([luiz, yasmin, , , alex].flat())
