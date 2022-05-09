@@ -14,7 +14,7 @@ panther.push(["rafael", "hacker"]);
 panther.push(["false", "booleanEncontrado"]);
 
 console.log(panther);
-console.log("\nMétodo fknd em array multidimensional, valor abaixo foi encontrado : ");
+console.log("\nMétodo find em array multidimensional, valor abaixo foi encontrado : ");
 
 const fBoolean = (item) => {
   return item === "booleanEncontrado";
