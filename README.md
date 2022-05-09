@@ -1,7 +1,9 @@
 # Estrutura de Dados e Algoritmos em JavaScript (Loiane Groner)
+
 Eu decidi recomeçar este repositório para construir ele de uma maneira mais organizada, já que eu parei no capitulo 2 do livro para aprender o básico necessário de TypeScript para continuar lendo, eu agora irei retornar ao início do livro. E sim, mesmo eu já sabendo uma boa parte deste livro, eu irei ler novamente tanto para fixar o seu conteúdo vasto, como para aprender mais e passar do ponto em que eu parei anteriormente.
 
 # Capítulo 1
+
 - [x] JavaScript – uma visão geral rápida
 - [x] http-server do Node.js
 - [x] Básico sobre o JavaScript
@@ -18,6 +20,7 @@ Eu decidi recomeçar este repositório para construir ele de uma maneira mais or
 - [x] Depuração e ferramentas
 
 # Capítulo 2
+
 - [x] Visão geral sobre ECMAScript e TypeScript
 - [x] Usando o Babel.js
 - [x] let e const no lugar de var
@@ -39,12 +42,47 @@ Eu decidi recomeçar este repositório para construir ele de uma maneira mais or
 - [x] Genéricos
 
 # Capítulo 3
+
 - [x] Arrays
 - [x] Criando e inicializando arrays
 - [x] Acessando elementos e fazendo uma iteração em um array
 - [] Métodos arrays
-- [] Arrays bidimensionais e multidimensionais
-- [] Iterando pelos elementos de arrays bidimensionais
+  - [x] at
+  - [x] concat
+  - [x] every
+  - [x] fill
+  - [x] filter
+  - [x] find
+  - [x] findIndex
+  - [x] flat
+  - [x] flatMap
+  - [x] forEach
+  - [x] from
+  - [x] includes
+  - [x] indexOf
+  - [pendente] isArray
+  - [pendente] join
+  - [pendente] keys
+  - [pendente] lastIndexOf
+  - [pendente] map
+  - [pendente] of
+  - [x] pop
+  - [x] push
+  - [pendente] reduce
+  - [pendente] reduceRight
+  - [pendente] reverse
+  - [x] shift
+  - [pendente] slice
+  - [pendente] some
+  - [pendente] sort
+  - [x] splice
+  - [pendente] toLocaleString
+  - [pendente] toString
+  - [x] unshift
+  - [pendente] values
+  
+- [x] Arrays bidimensionais e multidimensionais
+- [pendente] Iterando pelos elementos de arrays bidimensionais
 - [] Arrays multidimensionais
 - [] Juntando vários arrays
 - [] Funções de iteração
