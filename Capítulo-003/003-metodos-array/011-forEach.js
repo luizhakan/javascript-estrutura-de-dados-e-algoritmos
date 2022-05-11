@@ -15,11 +15,16 @@ const emails = [
   "luizhakan@outlook.com",
 ];
 
-// const enviar = (email) => {
-//     console.log(`Email enviado para ${email} com sucesso!`)
-// }
-
 emails.forEach((email, posicao, quantidade) => {
-console.log(`Email enviado para ${email} com sucesso! Sua posição foi [${posicao + 1}].`);
-console.log(`[Quantidade de emails na lista ${quantidade.length}]`);
+  console.log(
+    `Email enviado para ${email} com sucesso! Sua posição foi [${posicao + 1}].`
+  );
+  console.log(`[Quantidade de emails na lista ${quantidade.length}]`);
 });
+
+console.log("\n");
+// isso aqui é o mesmo que usar um laço for
+let numeros = [10, 20, 30, 40, 50];
+const funcaoForEach = numeros.forEach((elemento) =>
+  console.log(elemento % 2 === 0)
+);
