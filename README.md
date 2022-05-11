@@ -64,7 +64,7 @@ Eu decidi recomeçar este repositório para construir ele de uma maneira mais or
   - [pendente] join
   - [pendente] keys
   - [pendente] lastIndexOf
-  - [pendente] map
+  - [x] map
   - [pendente] of
   - [x] pop
   - [x] push
@@ -73,7 +73,7 @@ Eu decidi recomeçar este repositório para construir ele de uma maneira mais or
   - [pendente] reverse
   - [x] shift
   - [pendente] slice
-  - [pendente] some
+  - [x] some
   - [pendente] sort
   - [x] splice
   - [pendente] toLocaleString
@@ -83,9 +83,6 @@ Eu decidi recomeçar este repositório para construir ele de uma maneira mais or
   
 - [x] Arrays bidimensionais e multidimensionais
 - [pendente] Iterando pelos elementos de arrays bidimensionais
-- [] Arrays multidimensionais
-- [] Juntando vários arrays
-- [] Funções de iteração
 - [] Usando map e filter
 - [] Usando o objeto @@iterator
 - [] Métodos entries, keys e values de array
