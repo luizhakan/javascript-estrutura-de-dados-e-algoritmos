@@ -68,7 +68,7 @@ Eu decidi recomeçar este repositório para construir ele de uma maneira mais or
   - [pendente] of
   - [x] pop
   - [x] push
-  - [pendente] reduce
+  - [x] reduce
   - [pendente] reduceRight
   - [pendente] reverse
   - [x] shift
