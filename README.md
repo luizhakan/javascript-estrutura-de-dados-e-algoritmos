@@ -65,16 +65,16 @@ Eu decidi recomeçar este repositório para construir ele de uma maneira mais or
   - [pendente] keys
   - [pendente] lastIndexOf
   - [x] map
-  - [pendente] of
+  - [x] of
   - [x] pop
   - [x] push
   - [x] reduce
   - [pendente] reduceRight
-  - [pendente] reverse
+  - [x] reverse
   - [x] shift
   - [pendente] slice
   - [x] some
-  - [pendente] sort
+  - [x] sort
   - [x] splice
   - [pendente] toLocaleString
   - [pendente] toString
