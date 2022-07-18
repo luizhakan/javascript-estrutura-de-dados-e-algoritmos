@@ -61,7 +61,7 @@ Eu decidi recomeçar este repositório para construir ele de uma maneira mais or
   - [x] includes
   - [x] indexOf
   - [pendente] isArray
-  - [pendente] join
+  - [x] join
   - [pendente] keys
   - [pendente] lastIndexOf
   - [x] map
@@ -77,7 +77,7 @@ Eu decidi recomeçar este repositório para construir ele de uma maneira mais or
   - [x] sort
   - [x] splice
   - [pendente] toLocaleString
-  - [pendente] toString
+  - [x] toString
   - [x] unshift
   - [pendente] values
   
